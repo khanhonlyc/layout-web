@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -102,7 +107,7 @@
             </div>
         </div>
         <div class="container-content">
-            <div class="top-content">
+            <div class="top-content container">
                 <div class="top-wraper">
                     <div class="top-entry-item">
                         <img style="width: 15%; margin-right: 10px;" src="./image/pngwing.com.png" alt="">
@@ -132,7 +137,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main-content">
+            <div class="main-content container">
                 <div class="category-left">
                     <div class="category-left-title">Mymarkets</div>
                     <hr style="width: 70%;">
@@ -183,66 +188,146 @@
                     </div>
                 </div>
                 <div class="category-center">
-                    <div class="slideshow img-wraper">
-                        <!-- <div> -->
-                            <input type="radio" name="radio-btn" id="radio1">
-                            <input type="radio" name="radio-btn" id="radio2">
-                            <input type="radio" name="radio-btn" id="radio3">
-                            <div class="slide first">
-                                <img src="./image/team1.png" alt="" class="slide">
-                            </div>
-                            <div class="slide">
-                                <img src="./image/team2.png" alt="" class="slide">
-                            </div>
-                            <div class="slide">
-                                <img src="./image/team3.png" alt="" class="slide">
-                            </div>
-                        <!-- </div> -->
-                        <!-- <div class="img-wraper">
-                        </div> -->
 
-                        <div class="navigation-auto">
-                            <div class="auto-btn1"></div>
-                            <div class="auto-btn2"></div>
-                            <div class="auto-btn3"></div>
+                    <div class="images-lider">
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="./image/team1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="./image/team2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="image-item">
+                            <div class="image">
+                                <img src="./image/team3.png" alt="">
+                            </div>
                         </div>
                     </div>
-
-                    <div class="navigation-manual">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
+                </div>
+                <div class="category-right">
+                    <div class="right-title">
+                        <a href="#">
+                            <h3 class="text">Buyers Club benefits</h3>
+                            <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="benefits-floor">
+                        <a href="#" class="element-card">
+                            <div class="benefit-name">US $500 Coupons</div>
+                            <img style="width: 30%;" src="./image/coupon.png" alt="" class="benefit-img">
+                        </a>
+                        <a href="#" class="element-card">
+                            <div class="benefit-name">Fulfillment Services</div>
+                            <img style="width: 30%; color: black;" src="./image/Fulfillment.png" alt="" class="benefit-img">
+                        </a>
+                    </div>
+                    <div class="login-card">
+                        <h4 class="login-title">Sign up to enjoy exciting Buyers Club benefits</h4>
+                        <a class="element-button" href="#">Join for free</a>
+                        <a class="element-button" href="#">Sign in</a>
                     </div>
                 </div>
-                <div class="category-right">right</div>
             </div>
-
-            <!-- <script>
-                const slides = document.querySelectorAll('.slide');
-
-                // Tạo biến để theo dõi slide hiện tại
-                let currentSlide = 0;
-
-                // Hàm chuyển slide tiếp theo
-                function nextSlide() {
-                    // Ẩn slide hiện tại
-                    slides[currentSlide].style.display = 'none';
-
-                    // Tăng biến currentSlide lên 1, nếu vượt quá số lượng slide, quay trở lại slide đầu tiên
-                    currentSlide = (currentSlide + 1) % slides.length;
-
-                    // Hiển thị slide tiếp theo
-                    slides[currentSlide].style.display = 'block';
-                }
-
-                // Chạy hàm nextSlide mỗi 5 giây
-                setInterval(nextSlide, 5000);
-            </script> -->
+            <div class="list-products container">
+                <!-- <div class="list-product-row">
+                    <div class="list-product-col-12"> -->
+                        <a href="#">
+                            <img class="list-products-img" src="https://s.alicdn.com/@sc04/kf/H4153d495e60e416eb9b81f1fd7829610U.jpg_480x480.jpg" alt="">
+                            <div class="line2">
+                                <div class="">Baby Seat Little Animal Plush</div>
+                                <div class="price">$2.00 - $9.00</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <img class="list-products-img" src="./image/anime-toy.webp" alt="">
+                            <div class="line2">
+                                <div class="">Wholesale hot sale 8cm pvc anime toy</div>
+                                <div class="price">$4.00 - $5.00</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <img class="list-products-img" src="./image/children char.webp" alt="">
+                            <div class="line2">
+                                <div class="">Modern Multi-function PU Leather Small Children Chair</div>
+                                <div class="price">$2.00 - $9.00</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <img class="list-products-img" src="./image/Breathable.webp" alt="">
+                            <div class="line2">
+                                <div class="">Ready to ship No Steel Ring Free plus size Breathable</div>
+                                <div class="price">$1.50 - $1.73</div>
+                            </div>
+                        </a>
+    
+                        <a href="#">
+                            <img class="list-products-img" src="./image/children's sofa.webp" alt="">
+                            <div class="line2">
+                                <div class="">Kindergarten animal fund children's sofa girl lazy baby</div>
+                                <div class="price">$5.00 - $6.00</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <img class="list-products-img" src="./image/electric caffe.webp" alt="">
+                            <div class="line2">
+                                <div class="">High Quality Electric Coffee Water Bottle Filling Machine</div>
+                                <div class="price">$1000 - $1100</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <img class="list-products-img" src="./image/pillow.webp" alt="">
+                            <div class="line2">
+                                <div class="">hot double sided abstract jacquard squares throw pillow</div>
+                                <div class="price">$3.30 - $3.50</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <img class="list-products-img" src="./image/bikini.webp" alt="">
+                            <div class="line2">
+                                <div class="">B2021 New Fashion Triangle Conjoined Leak</div>
+                                <div class="price">$7.50 - $8.80</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <img class="list-products-img" src="./image/Girls chengsam.webp" alt="">
+                            <div class="line2">
+                                <div class="">Girls' cheongsam summer skirts girls clothes baby</div>
+                                <div class="price">$4.20 - $4.80</div>
+                            </div>
+                        </a>                     
+                        <a href="#">
+                            <img class="list-products-img" src="./image/beach blouse.webp" alt="">
+                            <div class="line2">
+                                <div class="">Beach hollow-out long sleeve knit beach blouse</div>
+                                <div class="price">$11.01 - $13.80</div>
+                            </div>
+                        </a>
+                        
+                    <!-- </div>
+                </div> -->
+            </div>
         </div>
         <div class="bottom-content"></div>
     </div>
     <div class="footer"></div>
     </div>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <Script src="./app.js"></Script>
 </body>
 
 </html>
